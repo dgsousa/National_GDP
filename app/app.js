@@ -1,5 +1,7 @@
-(function displayGDP() {
+import * as d3 from 'd3';
 
+(function displayGDP() {
+	"use strict";
 	var height = 700;
 	var width = 1500;
 	var padding = 50;
