@@ -88,15 +88,15 @@
 				  .on("mouseover", function() {
 				  	return tooltip.style("visibility", "visible")
 				  })
-			t	  .on("mouseout", function() {
+				  .on("mouseout", function() {
 				  	d3.select(this).style("fill", "black")
 				  	return tooltip.style("visibility", "hidden")
 				  })
 				  .on("mousemove", function(d) {
 				  	var date = parseTime(d[0])
-				  	d3.select(this).style("fill", "blue") .
+				  	d3.select(this).style("fill", "blue")
 				  	return tooltip.style("top", (event.pageY - 110) + "px").style("left", (event.pageX + 10) + "px")
-				  				  .html("<h3>$ " + d[1] + " Billion</h3><br><p>" + date.getFullYear() + " - " + months[date.getMonth()] + "" +"</p>")
+				  				  .html("<h3>$ " + d[1] + " Billion</h3><br><p>" + date.getFullYear() + " - " + months[date.getMonth()] + "" + "</p>")
 				  })
 
 			var tooltip = d3.select("body")
@@ -111,6 +111,8 @@
 							.style("border", "2px solid black")
 							.style("padding-left", "10px")						
 						  		   	  
-				}
-			})	
-		}())
+		}
+
+	})
+
+}())
