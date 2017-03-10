@@ -1,0 +1,33 @@
+svg {
+	border: 1px solid black;
+}
+
+.header {
+	text-align: center;
+}
+
+.y-text {
+	font-size: 20px;
+	font-family: 'sans-serif';
+	fill: black;
+	stroke: black;
+}
+
+.x-text {
+	font-size: 18px;
+	font-family: 'sans-serif';
+	fill: black;
+	stroke: black;
+}
+
+h3 {
+	margin: 0;
+	margin-top: 10px;
+}
+
+p {
+	margin: 0px;
+	margin-top: -10px;
+	font-size: 18px;
+}
+
