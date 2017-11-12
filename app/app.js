@@ -1,4 +1,4 @@
-import * as d3 from 'd3';
+coimport * as d3 from 'd3';
 
 (function displayGDP() {
 	"use strict";
@@ -72,7 +72,7 @@ import * as d3 from 'd3';
 
 			canvas.selectAll("rect")
 				  .data(response.data)
-				  .enter()
+				  .enter()d.
 				  .append("rect")
 				  .attr("width", 5)
 				  .attr("height", function(d) {
@@ -83,7 +83,6 @@ import * as d3 from 'd3';
 				  	return xScale(date);
 				  })
 				  .attr("y", function(d) {
-				  	//return yScale(d[1]);
 				  	return yScale(d[1]);
 				  })
 				  .attr("stroke", "black")
@@ -111,7 +110,7 @@ import * as d3 from 'd3';
 							.style("height", "80px")
 							.style("border-radius", "5px")
 							.style("border", "2px solid black")
-							.style("padding-left", "10px")						
+							.style("padding-left", "10px")					
 						  		   	  
 		}
 
